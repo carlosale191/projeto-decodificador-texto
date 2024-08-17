@@ -1,0 +1,29 @@
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container__texto_area {
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .container__botoes {
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .frase-aviso {
+        padding-left: 10%;
+        justify-content: center;
+    }
+
+    .coluna-mensagem {
+        width: auto;
+        padding-right: 3%;
+    }
+
+    .mensagem {
+        width: auto;
+    }
+}

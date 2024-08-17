@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #D5ED9F;
+    --cor-secundaria: #00712D;
+    --cor-terciaria: #FF9100;
+    --cor-quaternaria: #FFFBE6;
+    --cor-detalhe: #5B99C2;
+
+    --fonte-primaria: "Inter", sans-serif;
+    --fonte-secundaria: "Gentium Book Plus", serif;
+
+    --tamanho-pequeno: 1rem;
+    --tamanho-medio: 1.5rem;
+    --tamanho-grande: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+.header-logo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 1%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1% 15% 5% 10%;
+    gap: 80px;
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    padding: 10%;
+    margin-top: 3%;
+    font-size: var(--tamanho-grande);
+
+}
+
+.container__area {
+    width: 100%;
+}
+
+.container__texto_area {
+    width: auto;
+    min-height: 50px;
+    padding: 15px;
+    resize: none;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-grande);
+    font-weight: 500;
+    border-style: hidden;
+    color: var(--cor-secundaria);
+    display: flex;
+    margin-bottom: 80px;
+    text-transform: lowercase;
+    outline: none;
+
+}
+
+.frase-aviso {
+    padding: 3%;
+    font-size: var(--tamanho-pequeno);
+    font-weight: 300;
+    display: flex;
+    font-family: var(--fonte-secundaria);
+}
+
+
+
+.container__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    width: 50%;
+
+}
+
+.botao1 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    align-items: center;
+    padding: 10%;
+    font-weight: 400;
+    font-size: var(--tamanho-pequeno);
+    margin-right: 15px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+}
+
+.botao1:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quaternaria);
+}
+
+.botao1:focus {
+    border: 3px dotted var(--cor-detalhe);
+    color: var(--cor-detalhe);
+}
+
+.botao2 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 12px;
+    align-items: center;
+    padding: 10%;
+    font-weight: 200;
+    font-size: var(--tamanho-pequeno);
+    margin-left: 15px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+}
+
+.botao2:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quaternaria);
+}
+
+.botao2:focus {
+    border: 3px dotted var(--cor-detalhe);
+    color: var(--cor-detalhe);
+}
+
+.coluna-mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 5% 5% 5% 7%;
+    background-color: var(--cor-quaternaria);
+    border-radius: 32px;
+    margin-left: 7%;
+    box-shadow: 4px 4px 5px var(--cor-secundaria);
+    gap: 16px;
+
+}
+
+.mensagem {
+    background-image: url(/img/ilustracao.png);
+    background-repeat: no-repeat;
+    background-color: var(--cor-quaternaria);
+    border: none;
+    padding: 15%;
+    position: sticky;
+    outline: none;
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-medio);
+    color: var(--cor-secundaria);
+}
+
+
+
+.titulo-lateral {
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-medio);
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+
+
+.botao3 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    align-items: center;
+    padding: 3% 2% 3% 2%;
+    font-weight: 500;
+    font-size: var(--tamanho-pequeno);
+    margin-right: 15px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+
+}
+
+.botao3:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quaternaria);
+}
+
+.botao3:focus {
+    border: 3px dotted var(--cor-detalhe);
+    color: var(--cor-detalhe);
+}
+
+.rodape {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-pequeno);
+    font-weight: 500;
+    background-color: var(--cor-secundaria);
+    justify-content: center;
+    color: var(--cor-terciaria);
+    padding: 1.5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+}

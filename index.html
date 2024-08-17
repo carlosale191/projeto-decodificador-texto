@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+
+<body>
+    <header class="header-logo"><img src="./img/alura-header.png" alt="Logo da Alura"></header>
+    <main class="container">
+        <section class="container__conteudo">
+            <div1 class="container__area">
+                <textarea class="container__texto_area" id="texto-area" placeholder="Digite seu texto"></textarea>
+
+
+                <p class="frase-aviso"> &#9888 Apenas letras minúsculas e sem acento.</p>
+            </div1>
+
+            <div2 class="container__botoes">
+
+                <button onclick="btnCripto()" class="botao1">Criptografar</button>
+                <button onclick="btnDescripto()" class="botao2">Descriptografar</button>
+
+            </div2>
+        </section>
+
+        <section class="coluna-mensagem">
+            <textarea class="mensagem" cols="40" rows="7" id="msg-lateral"></textarea>
+            <h2 class="titulo-lateral">Nenhuma mensagem encontrada.</h2>
+            <button onclick="btnCopiar()" class='botao3' id="copiar" >Copiar</button>
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">© Alura 2024 - Desenvolvido por Carlos Alessandro de Sant'Anna</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
